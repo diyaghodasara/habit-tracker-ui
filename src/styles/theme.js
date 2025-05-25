@@ -1,156 +1,206 @@
-// temp file. To be updated
-export const lightTheme = {
-    // Core colors
-    body: '#F8F9FA',
-    text: '#212529',
-    primary: '#007bff',
-    secondary: '#6c757d',
-    accent: '#28a745',
+// src/styles/theme.js
+import { darken } from 'polished'; // Ensure polished is installed
 
-    // Backgrounds and surfaces
-    background: '#E9ECEF',
+export const lightTheme = {
+    name: 'light',
+    body: '#F7F9FC',
+    text: '#333333',
+    primary: '#3A8DFF',
+    primaryHover: darken(0.1, '#3A8DFF'), // Using darken for hover
+    secondary: '#6C757D',
+    secondaryHover: darken(0.1, '#6C757D'),
+    accent: '#50C878',
+    background: '#FFFFFF',
     surface: '#FFFFFF',
     cardBackground: '#FFFFFF',
     inputBackground: '#FFFFFF',
-
-    // Borders and dividers
-    border: '#DEE2E6',
-
-    // Specific component colors
-    buttonPrimaryBackground: '#007bff',
+    border: '#E0E0E0',
+    buttonPrimaryBackground: '#3A8DFF',
     buttonPrimaryText: '#FFFFFF',
-    buttonSecondaryBackground: '#6c757d',
+    buttonSecondaryBackground: '#6C757D',
     buttonSecondaryText: '#FFFFFF',
-
-    // Status colors
+    buttonGhostText: '#3A8DFF',
+    buttonGhostBorder: '#3A8DFF',
+    buttonGhostHoverBackground: 'rgba(58, 141, 255, 0.1)',
     success: '#28a745',
     error: '#DC3545',
     warning: '#FFC107',
     info: '#17A2B8',
+    disabledBackground: '#E9ECEF',
+    disabledText: '#ADB5BD',
+    focusOutline: 'rgba(58, 141, 255, 0.5)',
+    chartPrimary: '#3A8DFF',
+    chartSecondary: '#AED581',
+    chartGrid: '#E0E0E0',
+    textLighter: '#757575',
 };
 
 export const darkTheme = {
-    // Core colors
-    body: '#212529',
-    text: '#F8F9FA',
-    primary: '#66B3FF', // Lighter blue for main actions in dark mode
-    secondary: '#ADB5BD', // Lighter gray for less prominent elements
-    accent: '#2ECC71', // Bright green for positive actions/highlights
-
-    // Backgrounds and surfaces
-    background: '#343A40', // Slightly lighter dark gray for general backgrounds
-    surface: '#495057', // Medium dark gray for cards, modals, input fields
-    cardBackground: '#495057',
-    inputBackground: '#343A40',
-
-    // Borders and dividers
-    border: '#6C757D', // Medium gray for borders
-
-    // Specific component colors (examples)
-    buttonPrimaryBackground: '#66B3FF',
-    buttonPrimaryText: '#212529',
-    buttonSecondaryBackground: '#ADB5BD',
-    buttonSecondaryText: '#212529',
-
-    // Status colors
-    success: '#2ECC71',
-    error: '#E74C3C',
+    name: 'dark',
+    body: '#1A1D24',
+    text: '#EAEAEA',
+    primary: '#58A6FF',
+    primaryHover: darken(0.1, '#58A6FF'),
+    secondary: '#8B949E',
+    secondaryHover: darken(0.1, '#8B949E'),
+    accent: '#39D353',
+    background: '#222730',
+    surface: '#2D333B',
+    cardBackground: '#2D333B',
+    inputBackground: '#222730',
+    border: '#444C56',
+    buttonPrimaryBackground: '#58A6FF',
+    buttonPrimaryText: '#1A1D24',
+    buttonSecondaryBackground: '#8B949E',
+    buttonSecondaryText: '#1A1D24',
+    buttonGhostText: '#58A6FF',
+    buttonGhostBorder: '#58A6FF',
+    buttonGhostHoverBackground: 'rgba(88, 166, 255, 0.15)',
+    success: '#39D353',
+    error: '#F85149',
     warning: '#F39C12',
     info: '#3498DB',
+    disabledBackground: '#30363D',
+    disabledText: '#768390',
+    focusOutline: 'rgba(88, 166, 255, 0.6)',
+    chartPrimary: '#58A6FF',
+    chartSecondary: '#82CD47',
+    chartGrid: '#444C56',
+    textLighter: '#A0A0A0',
 };
 
 export const oceanTheme = {
-    // Core colors
+    name: 'ocean',
     body: '#E0F7FA',
-    text: '#004D40',
-    primary: '#00ACC1',
-    secondary: '#4DD0E1', // Lighter cyan
-    accent: '#00897B', // Darker teal/green
-
-    // Backgrounds and surfaces
+    text: '#003D40',
+    primary: '#0097A7',
+    primaryHover: darken(0.1, '#0097A7'),
+    secondary: '#26C6DA',
+    secondaryHover: darken(0.1, '#26C6DA'),
+    accent: '#00796B',
     background: '#B2EBF2',
-    surface: '#E0F7FA',
-    cardBackground: '#E0F7FA',
-    inputBackground: '#FFFFFF',
-
-    // Borders and dividers
+    surface: '#FFFFFF',
+    cardBackground: '#FFFFFF',
+    inputBackground: '#EFFFFF',
     border: '#80DEEA',
-
-    // Specific component colors (examples)
-    buttonPrimaryBackground: '#00ACC1',
+    buttonPrimaryBackground: '#0097A7',
     buttonPrimaryText: '#FFFFFF',
-    buttonSecondaryBackground: '#4DD0E1',
-    buttonSecondaryText: '#004D40',
+    buttonSecondaryBackground: '#26C6DA',
+    buttonSecondaryText: '#003D40',
+    buttonGhostText: '#0097A7',
+    buttonGhostBorder: '#0097A7',
+    buttonGhostHoverBackground: 'rgba(0, 151, 167, 0.1)',
+    success: '#4CAF50',
+    error: '#F44336',
+    warning: '#FF9800',
+    info: '#2196F3',
+    disabledBackground: '#B2EBF2',
+    disabledText: '#4DD0E1',
+    focusOutline: 'rgba(0, 151, 167, 0.5)',
+    chartPrimary: '#0097A7',
+    chartSecondary: '#80CBC4',
+    chartGrid: '#B2DFDB',
+    textLighter: '#006064',
 };
 
 export const forestTheme = {
-    // Core colors
-    body: '#F1F8E9', // Very light green
-    text: '#33691E', // Dark olive green
-    primary: '#8BC34A', // Medium green for main actions
-    secondary: '#AED581', // Lighter green
-    accent: '#689F38', // Darker forest green
-
-    // Backgrounds and surfaces
+    name: 'forest',
+    body: '#F1F8E9',
+    text: '#33691E',
+    primary: '#689F38',
+    primaryHover: darken(0.1, '#689F38'),
+    secondary: '#AED581',
+    secondaryHover: darken(0.1, '#AED581'),
+    accent: '#8BC34A',
     background: '#DCEDC8',
-    surface: '#F1F8E9',
-    cardBackground: '#F1F8E9',
-    inputBackground: '#FFFFFF',
-
-    // Borders and dividers
+    surface: '#FFFFFF',
+    cardBackground: '#FFFFFF',
+    inputBackground: '#F9FFF2',
     border: '#C5E1A5',
-
-    // Specific component colors (examples)
-    buttonPrimaryBackground: '#8BC34A',
+    buttonPrimaryBackground: '#689F38',
     buttonPrimaryText: '#FFFFFF',
     buttonSecondaryBackground: '#AED581',
     buttonSecondaryText: '#33691E',
+    buttonGhostText: '#689F38',
+    buttonGhostBorder: '#689F38',
+    buttonGhostHoverBackground: 'rgba(104, 159, 56, 0.1)',
+    success: '#4CAF50',
+    error: '#F44336',
+    warning: '#FFC107',
+    info: '#03A9F4',
+    disabledBackground: '#DCEDC8',
+    disabledText: '#9CCC65',
+    focusOutline: 'rgba(104, 159, 56, 0.5)',
+    chartPrimary: '#689F38',
+    chartSecondary: '#A5D6A7',
+    chartGrid: '#C8E6C9',
+    textLighter: '#558B2F',
 };
 
 export const minimalistTheme = {
-    // Core colors
+    name: 'minimalist',
     body: '#FFFFFF',
     text: '#212121',
     primary: '#000000',
+    primaryHover: '#333333',
     secondary: '#757575',
+    secondaryHover: '#555555',
     accent: '#424242',
-
-    // Backgrounds and surfaces
     background: '#F5F5F5',
     surface: '#FFFFFF',
     cardBackground: '#FFFFFF',
     inputBackground: '#FFFFFF',
-
-    // Borders and dividers
-    border: '#E0E0E0', // Light gray
-
-    // Specific component colors (examples)
+    border: '#E0E0E0',
     buttonPrimaryBackground: '#000000',
     buttonPrimaryText: '#FFFFFF',
     buttonSecondaryBackground: '#757575',
     buttonSecondaryText: '#FFFFFF',
+    buttonGhostText: '#000000',
+    buttonGhostBorder: '#000000',
+    buttonGhostHoverBackground: 'rgba(0, 0, 0, 0.05)',
+    success: '#4CAF50',
+    error: '#F44336',
+    warning: '#FFEB3B',
+    info: '#2196F3',
+    disabledBackground: '#EEEEEE',
+    disabledText: '#BDBDBD',
+    focusOutline: 'rgba(0, 0, 0, 0.5)',
+    chartPrimary: '#424242',
+    chartSecondary: '#9E9E9E',
+    chartGrid: '#F5F5F5',
+    textLighter: '#616161',
 };
 
 export const highContrastTheme = {
-    // Core colors
-    body: '#000000', // Black
+    name: 'highContrast',
+    body: '#000000',
     text: '#FFFF00', // Bright yellow
-    primary: '#FFFF00', // Bright yellow
+    primary: '#FFFF00',
+    primaryHover: '#E6E600',
     secondary: '#FFFFFF', // White
-    accent: '#ADFF2F', // Green-yellow
-
-    // Backgrounds and surfaces
-    background: '#000000', // Black for general backgrounds
-    surface: '#1E1E1E', // Very dark gray for cards/surfaces
+    secondaryHover: '#DDDDDD',
+    accent: '#32CD32', // Lime Green
+    background: '#000000',
+    surface: '#1E1E1E',
     cardBackground: '#1E1E1E',
     inputBackground: '#000000',
-
-    // Borders and dividers
-    border: '#FFFF00', // Bright yellow
-
-    // Specific component colors (examples)
+    border: '#FFFF00',
     buttonPrimaryBackground: '#FFFF00',
     buttonPrimaryText: '#000000',
     buttonSecondaryBackground: '#FFFFFF',
     buttonSecondaryText: '#000000',
+    buttonGhostText: '#FFFF00',
+    buttonGhostBorder: '#FFFF00',
+    buttonGhostHoverBackground: 'rgba(255, 255, 0, 0.15)',
+    success: '#32CD32',
+    error: '#FF4500', // OrangeRed
+    warning: '#FFA500', // Orange
+    info: '#00BFFF', // DeepSkyBlue
+    disabledBackground: '#333333',
+    disabledText: '#888888',
+    focusOutline: 'rgba(255, 255, 255, 0.8)', // White outline
+    chartPrimary: '#FFFF00',
+    chartSecondary: '#32CD32',
+    chartGrid: '#555555',
+    textLighter: '#CCCCCC', // Light gray for less emphasis if needed
 };
